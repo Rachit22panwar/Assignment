@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="80dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSignup"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/style"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textColor="@color/black">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtemail"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/style"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textColor="@color/black">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtCpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtpassword"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/style"
+        android:hint="ConformPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Fname"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/style"
+        android:layout_below="@+id/edtCpassword"
+        android:padding="10dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/Lname"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/style"
+        android:layout_below="@+id/edtCpassword"
+        android:layout_toRightOf="@+id/Fname"
+        android:padding="10dp">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/teal_200"
+        android:padding="10dp"
+        android:text="SIGN UP"
+        android:textStyle="bold" />
+
+</RelativeLayout>
